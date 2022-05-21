@@ -1,0 +1,14 @@
+{
+  "name": "talonstudios",
+  "version": "1.0.0",
+  "description": "Talon Studios official website.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "talon-studios"
+  ],
+  "author": "Talon-Studios",
+  "license": "MIT"
+}
