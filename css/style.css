@@ -73,16 +73,19 @@ body, html {
   border-radius: 20px;
   position: absolute;
   margin-left: calc(40% - 22px);
+  margin-top: 100px;
   cursor: pointer;
 }
 .card:hover {
   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+  width: 305px;
+  height: 355px;
 }
 .card-content {
   padding: 2px 16px;
 }
 .card1 {
-  transform: rotate(10deg) translate(150px);
+  transform: rotate(10deg) translate(50px);
   z-index: 0;
 }
 .card2 {
@@ -90,7 +93,7 @@ body, html {
   z-index: 0;
 }
 .card3 {
-  transform: rotate(-10deg) translate(-150px);
+  transform: rotate(-10deg) translate(-50px);
   z-index: 1;
 }
 

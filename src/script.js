@@ -15,7 +15,7 @@ let cards = document.querySelectorAll(".card");
 
 const cardsMoveOut = "400px";
 const cardsRotation = "10deg";
-const cardsTranslate = "150px";
+const cardsTranslate = "50px";
 
 backToTopButton.onclick = () => {
   elevator.elevate();
