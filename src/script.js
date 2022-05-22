@@ -13,7 +13,7 @@ let backToTopButton = document.getElementById("backToTop");
 let parallaxImage = document.getElementById("thumbnail");
 let cards = document.querySelectorAll(".card");
 
-const cardsMoveOut = "500px";
+const cardsMoveOut = "400px";
 const cardsRotation = "10deg";
 const cardsTranslate = "150px";
 
@@ -28,7 +28,7 @@ for (var i = 0; i < cards.length; i++) {
     } else if (card.className.includes("card3")) {
       card.style.transform = `rotate(-${cardsRotation}) translate(-${cardsMoveOut})`;
     } else {
-      card.style.transform = `rotate(0deg) translate(0px, ${cardsMoveOut})`;
+      card.style.transform = `rotate(0deg) translate(0px, -${cardsMoveOut})`;
     }
     setTimeout(function () {
       for (var x = 0; x < cards.length; x++) {

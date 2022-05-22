@@ -58,7 +58,8 @@ body, html {
   background-color: white;
   border-radius: 10px;
   position: absolute;
-  margin: 200px;
+  margin-left: calc(40% - 22px);
+  cursor: pointer;
 }
 .card:hover {
   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
