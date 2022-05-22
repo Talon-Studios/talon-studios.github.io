@@ -10,5 +10,8 @@
     "talon-studios"
   ],
   "author": "Talon-Studios",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.18.1"
+  }
 }
