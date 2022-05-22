@@ -1,5 +1,8 @@
 /* Importing fonts from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;400&display=swap');
 
 body, html {
   height: 100%;
@@ -12,8 +15,19 @@ body, html {
   font-size: 70px;
   padding: 10px;
 }
+
+/* Font classes */
 .main-font {
   font-family: "Macondo", cursive;
+}
+.title-font {
+  font-family: "Odibee Sans", cursive;
+}
+.content-font {
+  font-family: "Abel", sans-serif;
+}
+.small-font {
+  font-family: "Alumni Sans", sans-serif;
 }
 
 /* Custom scrollbar */
@@ -56,7 +70,7 @@ body, html {
   height: 350px;
   text-align: center;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   position: absolute;
   margin-left: calc(40% - 22px);
   cursor: pointer;
@@ -64,7 +78,7 @@ body, html {
 .card:hover {
   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
 }
-.container {
+.card-content {
   padding: 2px 16px;
 }
 .card1 {
