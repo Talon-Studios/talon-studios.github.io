@@ -28,10 +28,17 @@ body, html {
   font-family: "MedievalSharp", cursive;
 }
 
+/* Color classes */
+.theme-color-main {
+  color: #b8351e;
+}
+.theme-color-light {
+  color: #d86e43;
+}
+
 /* Title */
 .title {
   font-size: 70px;
-  color: #b8351e;
   display: inline;
 }
 .logo {
@@ -122,9 +129,9 @@ body, html {
 
 /* Footer */
 footer {
-  background-color: #ebebeb;
   padding: 15px;
   text-align: center;
+  background-color: #d86e43;
 }
 .footer-link {
   text-decoration: none;
@@ -133,5 +140,6 @@ footer {
   margin: 5px;
 }
 .footer-link:hover {
-  background-color: #e0e0e0;
+  background-color: #b8351e;
+  color: white;
 }
