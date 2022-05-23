@@ -11,23 +11,6 @@ body, html {
   padding: 0px;
 }
 
-/* Title */
-.title {
-  font-size: 70px;
-  color: #b8351e;
-  display: inline;
-}
-.logo {
-  height: 70px;
-  position: relative;
-  padding-right: 20px;
-  top: 10px;
-}
-.titleBar {
-  margin: 30px;
-  text-align: center;
-}
-
 /* Font classes */
 .main-font {
   font-family: "Macondo", cursive;
@@ -43,6 +26,23 @@ body, html {
 }
 .card-font {
   font-family: "MedievalSharp", cursive;
+}
+
+/* Title */
+.title {
+  font-size: 70px;
+  color: #b8351e;
+  display: inline;
+}
+.logo {
+  height: 70px;
+  position: relative;
+  padding-right: 20px;
+  top: 10px;
+}
+.titleBar {
+  margin: 30px;
+  text-align: center;
 }
 
 /* Custom scrollbar */
