@@ -125,6 +125,7 @@ body, html {
 .card-backside {
   transform: rotateY(180deg);
   font-size: 51px;
+  position: absolute;
 }
 
 /* Footer */
