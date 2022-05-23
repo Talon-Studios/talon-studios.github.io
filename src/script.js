@@ -12,6 +12,9 @@ const elevator = new Elevator({
 let backToTopButton = document.getElementById("backToTop");
 let parallaxImage = document.getElementById("thumbnail");
 let cards = document.querySelectorAll(".card");
+let playButton = document.getElementById("playButton");
+let pauseButton = document.getElementById("pauseButton");
+let video = document.querySelector(".video");
 
 const cardsMoveOut = "400px";
 const cardsRotation = "10deg";
@@ -46,4 +49,11 @@ for (var i = 0; i < cards.length; i++) {
       card.style.zIndex = 1;
     }, 200);
   }
+}
+
+playButton.onclick = () => {
+  video.play();
+}
+pauseButton.onclick = () => {
+  video.pause();
 }
