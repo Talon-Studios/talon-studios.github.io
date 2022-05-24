@@ -140,3 +140,34 @@ i {
 .fa-itch-io {
   color: #fa5c5c;
 }
+
+/* Video player */
+.video-player {
+  text-align: center;
+  width: 98.4%;
+  padding: 10px;
+  border-radius: 20px;
+}
+.video {
+  border-radius: 20px;
+}
+.video-controls {
+  font-size: 30px;
+  border-radius: 20px;
+  border: none;
+  color: #b8351e;
+  width: 80px;
+  height: 80px;
+  background-color: #d86e43;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.video-controls:hover {
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+  width: 85px;
+  height: 85px;
+  background-color: #c7653e;
+  font-size: 20px;
+}
