@@ -121,6 +121,9 @@ body, html {
 .card-info {
   font-family: $content-font;
 }
+.quote {
+  font-size: 15px;
+}
 
 // Footer
 footer {
@@ -144,8 +147,8 @@ footer {
 
 // Social icons on cards
 i {
-  font-size: 30px;
-  margin: 5px;
+  font-size: 15px;
+  margin-right: 5px;
   transition: 0.3s;
   filter: opacity(0.7);
 }
