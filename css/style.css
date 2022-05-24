@@ -125,6 +125,7 @@ body, html {
 .card-backside {
   transform: rotateY(180deg);
   font-size: 51px;
+  position: absolute;
 }
 
 /* Footer */
@@ -138,6 +139,8 @@ footer {
   color: black;
   padding: 10px;
   margin: 5px;
+  transition: 0.3s;
+  border-radius: 10px;
 }
 .footer-link:hover {
   background-color: #b8351e;
@@ -173,4 +176,16 @@ footer {
   height: 85px;
   background-color: #c7653e;
   font-size: 20px;
+}
+
+/* Social icons */
+i {
+  font-size: 30px;
+  margin: 5px;
+}
+.fa-github {
+  color: black;
+}
+.fa-itch-io {
+  color: #fa5c5c;
 }
