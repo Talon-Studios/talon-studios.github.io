@@ -2,6 +2,12 @@
 @use "fonts";
 @use "scrollbar";
 
+// Sass mixins
+@mixin shadow($box-shadow: 4px 8px) {
+  box-shadow: 0 $box-shadow 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
 // Font variables
 $main-font: "Macondo", cursive;
 $title-font: "Odibee Sans", cursive;
@@ -21,10 +27,16 @@ body, html {
 
 // Title
 .title {
-  font-size: 70px;
   display: inline;
+  font-size: 70px;
   font-family: $title-font;
   color: $main-color;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.title:hover {
+  font-size: 75px;
 }
 .logo {
   height: 70px;
@@ -56,8 +68,7 @@ body, html {
 
 // Cards
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+  @include shadow;
   width: 300px;
   height: 350px;
   text-align: center;
@@ -72,7 +83,7 @@ body, html {
   color: $main-color;
 }
 .card:hover {
-  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+  @include shadow(12px 20px);
   width: 305px;
   height: 355px;
 }
@@ -133,12 +144,20 @@ footer {
 i {
   font-size: 30px;
   margin: 5px;
+  transition: 0.3s;
+  filter: opacity(0.7);
 }
-.fa-github {
+i:hover {
+  filter: opacity(1);
+}
+.fa-github, .fa-codepen {
   color: black;
 }
 .fa-itch-io {
   color: #fa5c5c;
+}
+.fa-discord {
+  color: #5865F2;
 }
 
 /* Video player */
