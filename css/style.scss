@@ -18,11 +18,13 @@ $small-font: "Alumni Sans", sans-serif;
 // Color variables
 $main-color: #b8351e;
 $light-color: #d86e43;
+$very-light-color: #ffffff;
 
 body, html {
   height: 100%;
   margin: 0px;
   padding: 0px;
+  background-color: $very-light-color;
 }
 
 // Title
