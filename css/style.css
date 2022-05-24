@@ -27,6 +27,7 @@ body, html {
   height: 100%;
   margin: 0px;
   padding: 0px;
+  background-color: #ffffff;
 }
 
 .title {
@@ -135,6 +136,12 @@ body, html {
   font-family: "Abel", sans-serif;
 }
 
+.quote {
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Macondo", cursive;
+}
+
 footer {
   padding: 15px;
   text-align: center;
@@ -157,8 +164,8 @@ footer {
 }
 
 i {
-  font-size: 30px;
-  margin: 5px;
+  font-size: 15px;
+  margin-right: 5px;
   transition: 0.3s;
   filter: opacity(0.7);
 }
