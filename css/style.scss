@@ -1,27 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;400&display=swap");
-@font-face {
-  font-family: UnifrakturCook;
-  src: url("../assets/UnifrakturCook.ttf");
-}
-::-webkit-scrollbar {
-  width: 22px;
-}
+// Sass partials
+@use "fonts";
+@use "scrollbar";
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
+// Font variables
+$main-font: "Macondo", cursive;
+$title-font: "Odibee Sans", cursive;
+$card-back-font: UnifrakturCook;
+$content-font: "Abel", sans-serif;
+$small-font: "Alumni Sans", sans-serif;
 
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 22px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
+// Color variables
+$main-color: #b8351e;
+$light-color: #d86e43;
 
 body, html {
   height: 100%;
@@ -29,25 +19,25 @@ body, html {
   padding: 0px;
 }
 
+// Title
 .title {
   font-size: 70px;
   display: inline;
-  font-family: "Odibee Sans", cursive;
-  color: #b8351e;
+  font-family: $title-font;
+  color: $main-color;
 }
-
 .logo {
   height: 70px;
   position: relative;
   padding-right: 20px;
   top: 10px;
 }
-
 .titleBar {
   margin: 30px;
   text-align: center;
 }
 
+// Parallax effect for images
 .parallax {
   height: 100%;
   background-attachment: fixed;
@@ -55,15 +45,16 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .mountains {
   background-image: url("../assets/mountains.webp");
 }
 
+// Just plain space
 .space {
   height: 10000px;
 }
 
+// Cards
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -77,63 +68,54 @@ body, html {
   margin-top: 100px;
   cursor: pointer;
   transform-style: preserve-3d;
-  font-family: "Macondo", cursive;
-  color: #b8351e;
+  font-family: $main-font;
+  color: $main-color;
 }
-
 .card:hover {
   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
   width: 305px;
   height: 355px;
 }
-
 .card-content {
   padding: 2px 16px;
 }
-
 .card1 {
   transform: rotate(10deg) translate(100px) rotateY(180deg);
   z-index: 0;
 }
-
 .card2 {
   transform: rotate(0deg) translate(0px) rotateY(180deg);
   z-index: 0;
 }
-
 .card3 {
   transform: rotate(-10deg) translate(-100px) rotateY(180deg);
   z-index: 1;
 }
-
 .face {
   backface-visibility: hidden;
 }
-
 .card-backside {
   transform: rotateY(180deg);
   font-size: 60px;
   position: absolute;
-  font-family: UnifrakturCook;
+  font-family: $card-back-font;
   top: 30%;
 }
-
 .card-avatar {
   width: 150px;
   margin-top: 10px;
 }
-
 .card-info {
-  font-family: "Abel", sans-serif;
+  font-family: $content-font;
 }
 
+// Footer
 footer {
   padding: 15px;
   text-align: center;
   background-color: #d86e43;
-  font-family: "Alumni Sans", sans-serif;
+  font-family: $small-font;
 }
-
 .footer-link {
   text-decoration: none;
   color: black;
@@ -142,23 +124,19 @@ footer {
   transition: 0.3s;
   border-radius: 10px;
 }
-
 .footer-link:hover {
   background-color: #b8351e;
   color: white;
 }
 
+// Social icons on cards
 i {
   font-size: 30px;
   margin: 5px;
 }
-
 .fa-github {
   color: black;
 }
-
 .fa-itch-io {
   color: #fa5c5c;
 }
-
-/*# sourceMappingURL=style.css.map */
