@@ -30,10 +30,17 @@ body, html {
 }
 
 .title {
-  font-size: 70px;
   display: inline;
+  font-size: 70px;
   font-family: "Odibee Sans", cursive;
   color: #b8351e;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.title:hover {
+  font-size: 75px;
 }
 
 .logo {
@@ -152,6 +159,12 @@ footer {
 i {
   font-size: 30px;
   margin: 5px;
+  transition: 0.3s;
+  filter: opacity(0.7);
+}
+
+i:hover {
+  filter: opacity(1);
 }
 
 .fa-github {
