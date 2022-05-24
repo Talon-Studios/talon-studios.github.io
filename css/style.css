@@ -167,12 +167,16 @@ i:hover {
   filter: opacity(1);
 }
 
-.fa-github {
+.fa-github, .fa-codepen {
   color: black;
 }
 
 .fa-itch-io {
   color: #fa5c5c;
+}
+
+.fa-discord {
+  color: #5865F2;
 }
 
 /*# sourceMappingURL=style.css.map */
