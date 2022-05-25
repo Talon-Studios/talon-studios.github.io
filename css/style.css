@@ -101,17 +101,22 @@ body, html {
 }
 
 .card1 {
-  transform: rotate(10deg) translate(100px) rotateY(180deg);
+  transform: rotate(15deg) translate(100px) rotateY(180deg);
   z-index: 0;
 }
 
 .card2 {
-  transform: rotate(0deg) translate(0px) rotateY(180deg);
+  transform: rotate(5deg) translate(0px) rotateY(180deg);
   z-index: 0;
 }
 
 .card3 {
-  transform: rotate(-10deg) translate(-100px) rotateY(180deg);
+  transform: rotate(-5deg) translate(-100px) rotateY(180deg);
+  z-index: 0;
+}
+
+.card4 {
+  transform: rotate(-15deg) translate(-200px) rotateY(180deg);
   z-index: 1;
 }
 

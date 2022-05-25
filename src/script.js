@@ -14,10 +14,9 @@ let parallaxImage = document.getElementById("thumbnail");
 let cards = document.querySelectorAll(".card");
 
 const cardsMoveOut = "400px";
-const cardsRotation = "10deg";
+const cardsRotation = "15deg";
+const cardsRotationLess = "5deg";
 const cardsTranslate = "100px";
-
-let firstTimeCardClick = false;
 
 backToTopButton.onclick = () => {
   elevator.elevate();
@@ -28,9 +27,11 @@ for (var i = 0; i < cards.length; i++) {
     if (card.className.includes("card1")) {
       card.style.transform = `rotate(${cardsRotation}) translate(${cardsMoveOut})`;
     } else if (card.className.includes("card3")) {
-      card.style.transform = `rotate(-${cardsRotation}) translate(-${cardsMoveOut})`;
+      card.style.transform = `rotate(-${cardsRotationLess}) translate(-${cardsTranslate}, -${cardsMoveOut})`;
+    } else if (card.className.includes("card2")) {
+      card.style.transform = `rotate(${cardsRotationLess}) translate(0px, -${cardsMoveOut})`;
     } else {
-      card.style.transform = `rotate(0deg) translate(0px, -${cardsMoveOut})`;
+      card.style.transform = `rotate(-${cardsRotation}) translate(-${cardsMoveOut})`;
     }
     setTimeout(function () {
       for (var x = 0; x < cards.length; x++) {
@@ -39,9 +40,11 @@ for (var i = 0; i < cards.length; i++) {
       if (card.className.includes("card1")) {
         card.style.transform = `rotate(${cardsRotation}) translate(${cardsTranslate})`;
       } else if (card.className.includes("card3")) {
-        card.style.transform = `rotate(-${cardsRotation}) translate(-${cardsTranslate})`;
+        card.style.transform = `rotate(-${cardsRotationLess}) translate(-${cardsTranslate})`;
+      } else if (card.className.includes("card2")) {
+        card.style.transform = `rotate(${cardsRotationLess}) translate(0px, 0px)`;
       } else {
-        card.style.transform = `rotate(0deg) translate(0px, 0px)`;
+        card.style.transform = `rotate(-${cardsRotation}) translate(-200px)`;
       }
       card.style.zIndex = 1;
     }, 200);
