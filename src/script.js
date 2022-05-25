@@ -27,7 +27,7 @@ for (var i = 0; i < cards.length; i++) {
     if (card.className.includes("card1")) {
       card.style.transform = `rotate(${cardsRotation}) translate(${cardsMoveOut})`;
     } else if (card.className.includes("card3")) {
-      card.style.transform = `rotate(-${cardsRotationLess}) translate(0px, -${cardsMoveOut})`;
+      card.style.transform = `rotate(-${cardsRotationLess}) translate(-${cardsTranslate}, -${cardsMoveOut})`;
     } else if (card.className.includes("card2")) {
       card.style.transform = `rotate(${cardsRotationLess}) translate(0px, -${cardsMoveOut})`;
     } else {
