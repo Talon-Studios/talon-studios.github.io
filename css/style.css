@@ -1,57 +1,61 @@
-// Sass partials
-@use "fonts";
-@use "scrollbar";
-
-// Sass mixins
-@mixin shadow($box-shadow: 4px 8px) {
-  box-shadow: 0 $box-shadow 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;400&display=swap");
+@font-face {
+  font-family: UnifrakturCook;
+  src: url("../assets/UnifrakturCook.ttf");
+}
+::-webkit-scrollbar {
+  width: 22px;
 }
 
-// Font variables
-$main-font: "Macondo", cursive;
-$title-font: "Odibee Sans", cursive;
-$card-back-font: UnifrakturCook;
-$content-font: "Abel", sans-serif;
-$small-font: "Alumni Sans", sans-serif;
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
 
-// Color variables
-$main-color: #b8351e;
-$light-color: #d86e43;
-$very-light-color: #ffffff;
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 22px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 body, html {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  background-color: $very-light-color;
+  background-color: #ffffff;
 }
 
-// Title
 .title {
   display: inline;
   font-size: 70px;
-  font-family: $title-font;
-  color: $main-color;
+  font-family: "Odibee Sans", cursive;
+  color: #b8351e;
   transition: 0.3s;
   cursor: pointer;
   text-decoration: none;
 }
+
 .title:hover {
   font-size: 75px;
 }
+
 .logo {
   height: 70px;
   position: relative;
   padding-right: 20px;
   top: 10px;
 }
+
 .titleBar {
   margin: 30px;
   text-align: center;
 }
 
-// Parallax effect for images
 .parallax {
   height: 100%;
   background-attachment: fixed;
@@ -59,18 +63,18 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .mountains {
   background-image: url("../assets/mountains.webp");
 }
 
-// Just plain space
 .space {
   height: 10000px;
 }
 
-// Cards
 .card {
-  @include shadow;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
   width: 300px;
   height: 350px;
   text-align: center;
@@ -81,63 +85,75 @@ body, html {
   margin-top: 100px;
   cursor: pointer;
   transform-style: preserve-3d;
-  font-family: $main-font;
-  color: $main-color;
+  font-family: "Macondo", cursive;
+  color: #b8351e;
 }
+
 .card:hover {
-  @include shadow(12px 20px);
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
   width: 305px;
   height: 355px;
 }
+
 .card-content {
   padding: 2px 16px;
 }
+
 .card1 {
   transform: rotate(15deg) translate(100px) rotateY(180deg);
   z-index: 0;
 }
+
 .card2 {
   transform: rotate(5deg) translate(0px) rotateY(180deg);
   z-index: 0;
 }
+
 .card3 {
   transform: rotate(-5deg) translate(-100px) rotateY(180deg);
   z-index: 0;
 }
+
 .card4 {
   transform: rotate(-15deg) translate(-200px) rotateY(180deg);
   z-index: 1;
 }
+
 .face {
   backface-visibility: hidden;
 }
+
 .card-backside {
   transform: rotateY(180deg);
   font-size: 60px;
   position: absolute;
-  font-family: $card-back-font;
+  font-family: UnifrakturCook;
   top: 30%;
 }
+
 .card-avatar {
   width: 150px;
   margin-top: 10px;
 }
+
 .card-info {
-  font-family: $content-font;
+  font-family: "Abel", sans-serif;
 }
+
 .quote {
   font-size: 15px;
   font-style: italic;
-  font-family: $main-font;
+  font-family: "Macondo", cursive;
 }
 
-// Footer
 footer {
   padding: 15px;
   text-align: center;
   background-color: #d86e43;
-  font-family: $small-font;
+  font-family: "Alumni Sans", sans-serif;
 }
+
 .footer-link {
   text-decoration: none;
   color: black;
@@ -146,27 +162,31 @@ footer {
   transition: 0.3s;
   border-radius: 10px;
 }
+
 .footer-link:hover {
   background-color: #b8351e;
   color: white;
 }
 
-// Social icons on cards
 i {
   font-size: 15px;
   margin-right: 5px;
   transition: 0.3s;
   filter: opacity(0.7);
 }
+
 i:hover {
   filter: opacity(1);
 }
+
 .fa-github, .fa-codepen {
   color: black;
 }
+
 .fa-itch-io {
   color: #fa5c5c;
 }
+
 .fa-discord {
   color: #5865F2;
 }
@@ -178,9 +198,11 @@ i:hover {
   padding: 10px;
   border-radius: 20px;
 }
+
 .video {
   border-radius: 20px;
 }
+
 .video-controls {
   font-size: 30px;
   border-radius: 20px;
@@ -194,6 +216,7 @@ i:hover {
   transition: 0.2s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 .video-controls:hover {
   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
   width: 85px;
@@ -201,3 +224,5 @@ i:hover {
   background-color: #c7653e;
   font-size: 20px;
 }
+
+/*# sourceMappingURL=style.css.map */
