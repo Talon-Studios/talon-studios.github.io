@@ -197,6 +197,7 @@ i:hover {
   width: 98.4%;
   padding: 10px;
   border-radius: 20px;
+  background-color: green;
 }
 
 .video {
@@ -223,6 +224,25 @@ i:hover {
   height: 85px;
   background-color: #c7653e;
   font-size: 20px;
+}
+
+.video-title {
+  font-family: "Odibee Sans", cursive;
+  font-size: 50px;
+}
+
+.videos-sidebar {
+  background-color: yellow;
+  width: 200px;
+  height: 1000px;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.video-content {
+  margin-left: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */
