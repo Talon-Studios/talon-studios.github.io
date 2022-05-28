@@ -20,6 +20,8 @@ let button2 = document.getElementById("button2");
 
 let video1url = "https://ak.picdn.net/shutterstock/videos/1074810836/preview/stock-footage-tree-tops-against-sunny-sky-pine-forest-is-a-natural-resource.webm";
 let video2url = "https://ak.picdn.net/shutterstock/videos/1080319025/preview/stock-footage-abstract-tech-earth-globalization-in-d-motion-graphic-concept-transmit-ai-networking-on-fiber.webm";
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
 
 const cardsMoveOut = "400px";
 const cardsRotation = "15deg";
@@ -75,4 +77,17 @@ button2.onclick = () => {
   if (video.src !== video2url) {
     video.src = video2url;
   }
+}
+ctx.fillStyle = "#1c0d00"
+ctx.fillRect(0, 0, 450, 300);
+ctx.globalCompositeOperation = "destination-out";
+ctx.lineWidth = 20;
+ctx.strokeStyle = "rgba(0, 0, 0, 0.1)";
+canvas.onmousemove = function(e) {
+  var rect = this.getBoundingClientRect();
+  var x = e.clientX - rect.left;
+  var y = e.clientY - rect.top;
+  ctx.beginPath();
+  ctx.arc(x + Math.random() * 20, y + Math.random() * 20, 10, 0, 2 * Math.PI);
+  ctx.stroke();
 }
