@@ -191,4 +191,8 @@ i:hover {
   color: #5865F2;
 }
 
+.paintReveal {
+  cursor: url("../assets/sponge.png"), auto;
+}
+
 /*# sourceMappingURL=style.css.map */
