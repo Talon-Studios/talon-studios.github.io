@@ -12,6 +12,14 @@ const elevator = new Elevator({
 let backToTopButton = document.getElementById("backToTop");
 let parallaxImage = document.getElementById("thumbnail");
 let cards = document.querySelectorAll(".card");
+let playButton = document.getElementById("playButton");
+let pauseButton = document.getElementById("pauseButton");
+let video = document.querySelector(".video");
+let button1 = document.getElementById("button1");
+let button2 = document.getElementById("button2");
+
+let video1url = "https://ak.picdn.net/shutterstock/videos/1074810836/preview/stock-footage-tree-tops-against-sunny-sky-pine-forest-is-a-natural-resource.webm";
+let video2url = "https://ak.picdn.net/shutterstock/videos/1080319025/preview/stock-footage-abstract-tech-earth-globalization-in-d-motion-graphic-concept-transmit-ai-networking-on-fiber.webm";
 let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 
@@ -53,6 +61,23 @@ for (var i = 0; i < cards.length; i++) {
   }
 }
 
+playButton.onclick = () => {
+  video.play();
+}
+pauseButton.onclick = () => {
+  video.pause();
+}
+
+button1.onclick = () => {
+  if (video.src !== video1url) {
+    video.src = video1url;
+  }
+}
+button2.onclick = () => {
+  if (video.src !== video2url) {
+    video.src = video2url;
+  }
+}
 ctx.fillStyle = "#1c0d00"
 ctx.fillRect(0, 0, 450, 300);
 ctx.globalCompositeOperation = "destination-out";
