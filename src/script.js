@@ -15,6 +15,11 @@ let cards = document.querySelectorAll(".card");
 let playButton = document.getElementById("playButton");
 let pauseButton = document.getElementById("pauseButton");
 let video = document.querySelector(".video");
+let button1 = document.getElementById("button1");
+let button2 = document.getElementById("button2");
+
+let video1url = "https://ak.picdn.net/shutterstock/videos/1074810836/preview/stock-footage-tree-tops-against-sunny-sky-pine-forest-is-a-natural-resource.webm";
+let video2url = "https://ak.picdn.net/shutterstock/videos/1080319025/preview/stock-footage-abstract-tech-earth-globalization-in-d-motion-graphic-concept-transmit-ai-networking-on-fiber.webm";
 
 const cardsMoveOut = "400px";
 const cardsRotation = "15deg";
@@ -59,4 +64,15 @@ playButton.onclick = () => {
 }
 pauseButton.onclick = () => {
   video.pause();
+}
+
+button1.onclick = () => {
+  if (video.src !== video1url) {
+    video.src = video1url;
+  }
+}
+button2.onclick = () => {
+  if (video.src !== video2url) {
+    video.src = video2url;
+  }
 }
