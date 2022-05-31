@@ -7,6 +7,7 @@
     <meta name="author" content="Talon Studios">
     <title>Talon Studios</title>
     <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/741eeca198.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/tholman/elevator.js@master/elevator.min.js" charset="utf-8"></script>
@@ -17,12 +18,11 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag("js", new Date());
-
       gtag("config", "G-WYHKT9977X");
     </script>
   </head>
   <body>
-    <div class="titleBar">
+    <div class="titleBar" data-aos="fade-down" data-aos-duration="1500" data-aos-easing="ease-out-quad">
       <h1><img src="https://ik.imagekit.io/pfx7oxlvq0/talonStudiosLogo.png?format=webp" alt="Talon Studios Logo" class="logo"><a href="./" class="title">Talon Studios</a></h1>
     </div>
     <div class="cards">
@@ -87,15 +87,15 @@
     </div>
     <div class="parallax mountains"></div>
     <br>
-    <div class="paintReveal">
+    <div class="paintReveal" data-aos="fade-in">
       <img src="assets/mountains.webp" alt="Mountains" style="position: absolute" height="300">
       <canvas id="canvas" width="450" height="300" style="position: absolute"></canvas>
     </div>
     <div class="space"></div>
     <button type="button" id="backToTop">^ Back to Top ^</button>
     <footer><a href="https://github.com/Talon-Studios" target="_blank" class="footer-link">GitHub</a><a href="mailto:talonstudiosgames@gmail.com" class="footer-link">Email Us</a></footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="src/script.js" charset="utf-8"></script>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6291a5329bfbc8ba"></script>
   </body>
 </html>
