@@ -5,6 +5,7 @@
 @font-face {
   font-family: UnifrakturCook;
   src: url("../assets/UnifrakturCook.ttf");
+  font-display: swap;
 }
 ::-webkit-scrollbar {
   width: 22px;
