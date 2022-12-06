@@ -5,6 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background: #1e1e20;
+@layer base {
+    body {
+        @apply bg-background;
+        @apply text-white;
+    }
 }

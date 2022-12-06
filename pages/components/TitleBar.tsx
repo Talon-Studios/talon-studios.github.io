@@ -6,10 +6,12 @@ import logo from '../../public/logo.png'
 
 function TitleBar() {
 	return (
-		<a href='./' className='flex flex-row text-center justify-center items-center m-5'>
-			<Image src={logo} alt='Talon Studios Logo' width={100} className='mr-5'/>
-			<p className='text-7xl font-odibee text-accent'>Talon Studios</p>
-		</a>
+		<div className='bg-zinc-800 p-5 shadow-xl'>
+			<a href='./' className='flex flex-row text-center justify-center items-center'>
+				<Image src={logo} alt='Talon Studios Logo' className='mr-5 w-[75px] sm:w-[80px]'/>
+				<p className='text-6xl font-odibee text-accent hidden sm:flex'>Talon Studios</p>
+			</a>
+		</div>
 	)
 }
 
