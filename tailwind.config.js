@@ -6,7 +6,6 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-
     extend: {
       fontFamily: {
         'odibee': ['"Odibee Sans"', 'cursive'],
@@ -14,6 +13,7 @@ module.exports = {
       },
       colors: {
         'background': '#1e1e20',
+        'background-light': '#27272a',
         'accent': '#b32c19',
         'secondary-accent': '#e1824f',
       },

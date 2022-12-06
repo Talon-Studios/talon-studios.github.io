@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import TitleBar from './components/TitleBar'
+import Footer from './components/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +14,10 @@ const Home: NextPage = () => {
 			</Head>
 			
       <TitleBar/>
+
+      <div className='mb-[1000px]'></div>
       
+      <Footer/>
     </div>
   )
 }
