@@ -9,6 +9,7 @@ const Home: NextPage = () => {
     <div>
 			<Head>
 				<title>Talon Studios</title>
+        <link rel="icon" href="/favicon.ico" />
 			</Head>
 			
       <TitleBar/>
