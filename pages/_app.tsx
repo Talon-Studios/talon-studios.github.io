@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      // Google tag (gtag.js)
+      {/* Google tag (gtag.js) */}
       <Script strategy='afterInteractive' src="https://www.googletagmanager.com/gtag/js?id=G-YVJ081HBEG"></Script>
       <Script id='google-analytics' strategy='afterInteractive' dangerouslySetInnerHTML={{
         __html: `
