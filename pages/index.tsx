@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 import TitleBar from './components/TitleBar'
 import Footer from './components/Footer'
+import CardGallery from './components/CardGallery'
 
 const Home: NextPage = () => {
   return (
@@ -11,11 +12,14 @@ const Home: NextPage = () => {
 			<Head>
 				<title>Talon Studios</title>
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://kit.fontawesome.com/c3b7daf096.js" crossOrigin="anonymous"></script>
 			</Head>
 			
       <TitleBar/>
 
-      <div className='mb-[1000px]'></div>
+      <div className='mb-12'></div>
+
+      <CardGallery></CardGallery>
       
       <Footer/>
     </div>

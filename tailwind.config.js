@@ -4,9 +4,14 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
     './app/**/*.{js,ts,jsx,tsx}',
+    './node_modules/tw-elements/dist/js/**/*.js',
   ],
   theme: {
     extend: {
+      width: {
+        'card-image': '150px',
+        'card': '350px',
+      },
       fontFamily: {
         'odibee': ['"Odibee Sans"', 'cursive'],
         'abel': ['"Abel"', 'sans-serif'],
@@ -19,5 +24,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tw-elements/dist/plugin')
+  ],
 }
