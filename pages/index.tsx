@@ -11,6 +11,7 @@ const Home: NextPage = () => {
     <div>
 			<Head>
 				<title>Talon Studios</title>
+        <meta name="description" content="We are a small indie game studio." />
         <link rel="icon" href="/favicon.ico" />
         <script src="https://kit.fontawesome.com/c3b7daf096.js" crossOrigin="anonymous"></script>
 			</Head>
